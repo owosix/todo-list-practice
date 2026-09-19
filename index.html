@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мои задачи | Todo App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="sticker" id="sticker" title="Нажми на меня!">
+    <img src="nya.png" alt="Стикер">
+</div>
+
+<!-- Звук при клике -->
+<audio id="popSound" src="yippee.mp3" preload="auto"></audio>
+    <div class="app-container">
+        <header class="app-header">
+            <h1>Мои задачи</h1>
+            <p class="subtitle">меньше хаоса в голове (ノωヽ)</p>
+        </header>
+
+        <div class="input-wrapper">
+            <input type="text" id="taskInput" placeholder="Что нужно сделать?">
+            <button id="addBtn" aria-label="Добавить задачу">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+            </button>
+        </div>
+
+        <div class="stats-bar">
+            <span id="taskCounter">Всего задач: 0</span>
+            <button id="clearCompleted" class="clear-btn">Очистить выполненные</button>
+        </div>
+
+        <ul id="taskList" class="task-list"></ul>
+        
+        <div id="emptyState" class="empty-state">
+            <p>У вас пока нет задач. Добавьте первую!!!</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
