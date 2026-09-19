@@ -37,3 +37,4 @@ Frontend: HTML5, CSS3, JavaScript (Vanilla JS)
 ![Демонстрация](demo.gif)
 
 ## Качество кода
+[![Maintainability](https://qlty.sh/gh/owosix/projects/todo-list-practice/maintainability.svg)](https://qlty.sh/gh/owosix/projects/todo-list-practice)
